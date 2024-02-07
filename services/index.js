@@ -1,5 +1,6 @@
 'use strict'
-
+///////////////////////////////////////
+//ESTO SON PARA EL MANEJO CON TOKENS//
 const jwt = require('jwt-simple')
 const moment = require('moment')
 const config = require('../config')

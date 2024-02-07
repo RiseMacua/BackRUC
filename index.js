@@ -1,5 +1,10 @@
 "use strict"
  
+
+//////////////////////////////////
+//CONEXION CON LA BASE DE DATOS//
+
+
 const mongoose=require("mongoose");
 const app=require("./app.js");
 const config=require("./config")

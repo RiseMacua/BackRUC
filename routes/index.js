@@ -1,4 +1,6 @@
 "use stric"
+///////////////////////////////////////////
+//AQUI DEBE IR LOS LOS GETS POST Y DEMAS //
 
 const express=require("express");
 const api=express.Router();

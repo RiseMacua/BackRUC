@@ -6,6 +6,8 @@ const Ruc = require("../model/modelRuc.js")
 //*************************************//
         //BUSACAR RUC POR NÚMERO
 //************************************//
+
+
 function getRucForNumber(req,res)
 {
 

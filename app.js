@@ -1,5 +1,6 @@
 "use strict"
-
+////////////////////////////////
+////////INICIO DE APP///////////
 const express= require("express");
 const hbs=require("express-handlebars");
 const app=express();

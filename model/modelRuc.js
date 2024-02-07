@@ -10,4 +10,5 @@ const RucShema=Schema({
     
 },{ collection: 'Ruc'});
 
+
 module.exports=mongoose.model("Ruc",RucShema);

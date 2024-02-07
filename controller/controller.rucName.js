@@ -6,6 +6,7 @@ const Ruc = require("../model/modelRuc.js")
         //BUSACAR RUC POR NOMBRE
 //************************************//
 
+
 function getRucForName (req,res)
 {
     let razonSocial=req.query.razonSocial
