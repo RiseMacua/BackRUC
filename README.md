@@ -12,16 +12,14 @@ API de búsqueda por numero o razón social del REGISTRO ÚNICO DEL CONTRIBUYENT
 
 ### Para buscar por razón social: 
 
-http://api-ruc-py.openode.io/ruc/name
+http://localhost:3000/ruc/name
 
 Devuelve un Send() con 20 documentos ordenados de forma Ascendente que coincidan con el string enviados, el tamaño del string debe de ser **igual o mayor a 4** 
 
 **Importante** poner apellidos primero para que de un mejor resultado(trabajando en este problema)
 
 
-##### ejemplo:
-
-http://api-ruc-py.openode.io/ruc/name?razonSocial=vice%20presidencia%20de%20la%20republica
+http://localhost:3000/ruc/name?razonSocial=vice%20presidencia%20de%20la%20republica
 
 ```
 {
@@ -41,7 +39,7 @@ http://api-ruc-py.openode.io/ruc/name?razonSocial=vice%20presidencia%20de%20la%2
 
 devuelve un status 200 con un solo documento
 
-http://api-ruc-py.openode.io/ruc/name?razonSocial=presidencia
+http://localhost:3000/ruc/name?razonSocial=presidencia
 
 
 ```
@@ -93,7 +91,7 @@ devuelve un status 200 con los 20 primeros documentos ordenados de forma decende
 
 ### Para buscar por número de RUC
 
-https://apiv1-ruc-py.herokuapp.com/api/rucs/ruc/numeroRuc
+http://localhost:3000/api/rucs/ruc/numeroRuc
 
 devuelve Send() con el documento que coincida el número de ruc, el ruc no debe contener el digito verificador
 
@@ -102,7 +100,7 @@ devuelve Send() con el documento que coincida el número de ruc, el ruc no debe 
 **~~80009837-4~~(incorrecto)**
 
 ###### Ejemplo:
-http://api-ruc-py.openode.io/ruc/number?ruc=80009837
+http://localhost:3000/ruc/number?ruc=80009837
 
 ```
 {
