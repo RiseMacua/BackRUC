@@ -91,7 +91,7 @@ devuelve un status 200 con los 20 primeros documentos ordenados de forma decende
 
 ### Para buscar por número de RUC
 
-http://localhost:3000/api/rucs/ruc/numeroRuc
+http://localhost:3000/ruc/number?ruc=80009837
 
 devuelve Send() con el documento que coincida el número de ruc, el ruc no debe contener el digito verificador
 
@@ -118,7 +118,26 @@ http://localhost:3000/ruc/number?ruc=80009837
 ```
 Devuelve un status 200 con el documento que coincide con el número de ruc 
 
+para agregar un ruc nuevo debemos hacer un post a esta direccion con estos parametros
+http://localhost:3000/Ruc/pnumber
 
+{
+    "razonSocial": "mauricio acevedo",
+    "ruc": "6102346",
+    "dv": "9"
+}
+
+deberia devolverte:
+
+{
+    "ruc": {
+        "_id": "65c39a4edda52e3aa0fdb127",
+        "ruc": "6102346",
+        "dv": "9",
+        "razon_social": "mauricio acevedo",
+        "__v": 0
+    }
+}
 
 La api esta en fase BETA y con servidor en openode GRATIS al igual que la base de datos en mLab, así que la respuesta no será la más rápida.
 Cualquier duda o sugerencia estoy a disposición de la comunidad 
