@@ -121,14 +121,16 @@ Devuelve un status 200 con el documento que coincide con el número de ruc
 para agregar un ruc nuevo debemos hacer un post a esta direccion con estos parametros
 http://localhost:3000/Ruc/pnumber
 
+```
 {
     "razonSocial": "mauricio acevedo",
     "ruc": "6102346",
     "dv": "9"
 }
-
+```
 deberia devolverte:
 
+```
 {
     "ruc": {
         "_id": "65c39a4edda52e3aa0fdb127",
@@ -138,6 +140,7 @@ deberia devolverte:
         "__v": 0
     }
 }
+```
 
 La api esta en fase BETA y con servidor en openode GRATIS al igual que la base de datos en mLab, así que la respuesta no será la más rápida.
 Cualquier duda o sugerencia estoy a disposición de la comunidad 
